@@ -25,4 +25,4 @@ bad_packet : 03 00 00 13 0e e0 00 00 00 00 00 01 00 08 00 00 00 00 00 03 00 00 6
 # for dev
 # env GOOS=windows GOARCH=386 go build -i -o khxn32.exe main.go
 # go build -i -o khxn.exe main.go
-debug : true
+debug : false
