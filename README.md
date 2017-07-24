@@ -7,4 +7,4 @@ KhanAttacker
 2. Set config.yml *use_client_version* to `true`.
 3. Set config.yml *bad_packet*.
 4. Set config.yml *wait*.
-5. Run khxn.exe.
+5. Run `khxn.exe`.
