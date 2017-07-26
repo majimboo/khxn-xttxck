@@ -1,4 +1,3 @@
-main.go
-bot.go
+*.go
 KhanClient.exe
 GameData.bin

